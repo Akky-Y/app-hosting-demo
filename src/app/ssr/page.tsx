@@ -1,12 +1,14 @@
+import SsrComponent from "@/components/ssr-component";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-export default function Home() {
+export default function Page() {
   return (
     <div className="container">
-      <h1>Hello AppHosting!!</h1>
+      <h2>SSRページ</h2>
+      <SsrComponent />
       <Button asChild variant="outline">
-        <Link href="/ssr">SSRされてるページへ行く</Link>
+        <Link href="/">戻る</Link>
       </Button>
     </div>
   );
